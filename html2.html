@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Parameter Control</title>
+		<input type="button" value=" Write to XML " onclick="createXML( 'outputFile.xml', 'text/plain')">
+		<a href="" style="display:none" id="download_link">outputFile.xml</a>
+		<h1 align="center"><i>Laba help control param</i></h1>
+		<script src="js2.js"></script>
+		<link rel="stylesheet" type="text/css" href="css2.css">
+	</head>
+	
+	<body onload="workWithXML()">
+
+		<table id="Info" align="center">
+			<tr>
+			<td><em>ID Row</em></td>
+			<td><em>Name</em></td>
+			<td><em>Description</em></td>
+			<td><em>Value</em></td>
+			<td><em>Del Row</em></td>
+			</tr>
+		</table>
+		<div id="Par">
+		<p>
+		<h3 align="center"><i>Добавление новой строки</i></h3>
+		<em>Enter ID :</em><input type="text" placeholder="ID" id="newId">
+		<em>Enter Name :</em><input type="text" placeholder="Name" id="newName">
+		<em>Enter Type :</em><select size="3" id="newType" onchange='changeFieldType(this)'>
+    	<option value="System.String">String</option>
+		<option value="System.Boolean">Boolean</option>
+    	<option value="System.Int32">Int32</option>
+   		</select>
+		</p>
+		<p>
+		<em>Description :</em><input type="text" placeholder="Description" id="newDescription">
+		<em>Enter Value :</em><input type="text"   placeholder="Value" id="newValue" >	
+		</p>
+		<p>
+   		<input type="button" value=" Add row " onclick="addRow()">
+		<input type="button" value=" Clear value " onclick="clearValue()">
+		<input type="button" value=" Clear all fields " onclick="clearAllValue()">
+		</p>
+		</div>
+	</body>
+</html>

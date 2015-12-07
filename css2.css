@@ -1,0 +1,85 @@
+body {
+	background: url(back.jpg);
+}
+h1{
+	color: #FFCCFF;
+	text-decoration: underline;
+}
+em,h3{
+	color: green;
+	font-weight:bold;
+	text-decoration: underline;
+}
+div{
+	background: #FFCCFF;
+	opacity: 0.90; 
+	border-radius: 15px;
+	margin: 2 auto;
+	margin-top:2%;
+    margin-bottom:2%;
+	margin-left:5%;
+    width: 55%;
+}
+td{
+  font-family:arial, monospace;
+  font-style:italic;
+  height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid green;
+  box-shadow: 0px 1px 1px green;
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+}
+option{
+	color: green;
+	text-align: left;
+	 box-shadow: 0px 1px 1px green;
+}
+a:link{
+  font-family:arial, monospace;
+  text-decoration: none;
+  color: #FFCCFF;
+  cursor: pointer;
+}
+table{
+
+  padding: 0px;
+  opacity: 0.92; 
+  font-family:arial, monospace;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px;
+  color: green;
+  background: #FFCCFF;
+  margin-top:2%;
+  margin-bottom:2%;
+  border-radius: 15px;
+}
+select,input[type=text] {
+  font-family:arial, monospace;
+  padding: 0 10px;
+  box-shadow: 1px 1px 1px green;
+  text-align: left;
+  vertical-align: middle;
+  color: green;
+}
+a:hover{
+  text-decoration: underline;
+}
+input[type=button]  {
+  font-family:arial, monospace;
+  font-style: italic;
+  padding:2px 7px; 
+  background:#FFCCFF; 
+  border:2 none; 
+  cursor:pointer;
+  border-radius: 10px;
+  color: green;
+}
+input[type=number]  {
+  font-family:arial, monospace;
+  color: green;
+}
